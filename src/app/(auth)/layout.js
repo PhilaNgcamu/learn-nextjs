@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "./styles.css";
+import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,9 +24,19 @@ const navLinks = [
 
 const AuthLayout = ({ children }) => {
   const pathname = usePathname();
+  const [input, setInput] = useState("");
   return (
     <>
       <div>
+        <div>
+          <input
+            type="text"
+            placeholder="Enter your name"
+            className="border border-gray-300 rounded-md p-2"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+          />
+        </div>
         {navLinks.map((link) => {
           const isActive = pathname.startsWith(link.href);
 
