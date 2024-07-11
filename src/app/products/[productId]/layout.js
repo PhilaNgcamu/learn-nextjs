@@ -2,7 +2,19 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const ProductDetailsLayout = ({ children }) => {
+const getRandomInt = (count) => {
+  return Math.floor(Math.random() * count);
+};
+
+const ProductDetailsLayout = ({ params, children }) => {
+  const random = getRandomInt(2);
+  if (parseInt(params.reviewsId) > 1000) {
+    notFound();
+  }
+  if (random === 1) {
+    throw new Error("Error loading product");
+  }
+
   return (
     <>
       {children}
