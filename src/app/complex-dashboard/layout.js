@@ -1,10 +1,9 @@
 const DashboardLayout = ({ children, users, revenue, notifications }) => {
   return (
     <>
-      <h1>Dashboard</h1>
-      {children}
+      <div>{children}</div>
       <div style={{ display: "flex" }}>
-        <div style={{ display: "flex" }}>
+        <div style={{ display: "flex", flexDirection: "column" }}>
           <div>{users}</div>
           <div>{revenue}</div>
         </div>

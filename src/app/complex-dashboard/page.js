@@ -1,5 +1,9 @@
-const LineChart = () => {
-  return <h1>Line Chart</h1>;
+const DashboardLayout = () => {
+  return (
+    <>
+      <h1>Complex Dashboard</h1>
+    </>
+  );
 };
 
-export default LineChart;
+export default DashboardLayout;

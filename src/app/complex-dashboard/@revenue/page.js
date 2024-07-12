@@ -1,7 +1,11 @@
 import Card from "@/components/card";
 
 const RevenueMetrics = () => {
-  return <Card>Revenue Metrics</Card>;
+  return (
+    <>
+      <Card>RevenueMetrics</Card>
+    </>
+  );
 };
 
 export default RevenueMetrics;
