@@ -3,12 +3,10 @@ import Link from "next/link";
 
 const Notifications = () => {
   return (
-    <>
-      <Card>
-        Notifications
-        <Link href="/complex-dashboard/archived">Archived</Link>
-      </Card>
-    </>
+    <Card>
+      Notifications
+      <Link href="/complex-dashboard/archived">Archived</Link>
+    </Card>
   );
 };
 
