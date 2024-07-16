@@ -8,7 +8,7 @@ export default function ProductsPage() {
   return (
     <div className={styles.container}>
       <div className={styles.top}>
-        <Search placeholder={"Search for a product..."} />
+        <Search placeholder="Search for a product..." />
         <Link href="/dashboard/products/add">
           <button className={styles.addButton}>Add New</button>
         </Link>
@@ -17,7 +17,6 @@ export default function ProductsPage() {
         <thead>
           <tr>
             <td>Title</td>
-            <td>Email</td>
             <td>Description</td>
             <td>Price</td>
             <td>Created At</td>
@@ -30,19 +29,19 @@ export default function ProductsPage() {
             <td>
               <div className={styles.product}>
                 <Image
-                  src="/noavatar.png"
+                  src="/noproduct.jpg"
                   alt=""
                   width={40}
                   height={40}
-                  className={styles.userImage}
+                  className={styles.productImage}
                 />
-                John Doe
+                iPhone
               </div>
             </td>
-            <td>john.doe@gmail.com</td>
+            <td>Desc</td>
+            <td>$999</td>
             <td>2022-09-09</td>
-            <td>Client</td>
-            <td>Active</td>
+            <td>72</td>
             <td>
               <div className={styles.buttons}>
                 <Link href="/dashboard/users/1">
