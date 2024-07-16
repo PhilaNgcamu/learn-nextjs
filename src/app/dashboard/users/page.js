@@ -11,7 +11,9 @@ export default function UsersPage() {
           <button className={styles.addButton}>Add New</button>
         </Link>
       </div>
-      <table className={styles.table}></table>
+      <table className={styles.table}>
+        <thead></thead>
+      </table>
     </div>
   );
 }
